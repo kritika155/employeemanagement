@@ -1,0 +1,24 @@
+<div class="employee">
+  <input type="text" placeholder="name"  name="username" [(ngModel)]="employee.name">
+  <input type="text" placeholder="email"  name="username" [(ngModel)]="employee.email">
+  <input type="text" placeholder="phone"  name="username" [(ngModel)]="employee.phone">
+  <input type="text" placeholder="address"  name="username" [(ngModel)]="employee.address">
+
+<input type="button" name="add" value="addEmployee" (click)="addEmployee()">
+</div>
+<ul class="employee">
+<li *ngFor="let employee of employees">
+<span>{{employee.id}}</span>
+|
+<span>{{employee.name}}</span>
+|
+<span>{{employee.email}}</span>|
+<span>{{employee.phone}}</span>|
+<span>{{employee.email}}</span>
+</li>
+</ul>
+
+
+
+  
+  
